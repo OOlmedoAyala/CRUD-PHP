@@ -37,14 +37,6 @@ $usuarios = $stmt->fetchAll();
     </tr>
     <?php endforeach; ?>
 </table>
-<script>
-    document.querySelectorAll('.delete').forEach(button => {
-    button.addEventListener('click', function(event) {
-        if (!confirm('¿Estás seguro de que deseas eliminar este usuario?')) {
-            event.preventDefault();
-        }
-    });
-});
-</script>
+<script src="./script.js"></script>
 </body>
 </html>
